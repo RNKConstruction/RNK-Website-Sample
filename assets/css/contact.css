@@ -1,0 +1,194 @@
+/* Contact Us Section */
+#contact-us {
+    padding: 30px 10px;
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+/* Contact Info */
+.contact-info span {
+    margin-left: 15px;
+	font-size: 13px;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+    gap: 150px;
+}
+
+.contact-image {
+    flex: 0.6;
+}
+
+
+.contact-details {
+    flex: 1.4; 
+    text-align: left;
+}
+
+.contact-details h2 {
+    font-size: 32px;
+    color: #fcb900;
+    margin-bottom: 20px;
+}
+
+.contact-details p {
+    font-size: 16px;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #fcb900;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 8px;
+    margin-top: 15px;
+	align-items: Center;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    border: 1px solid #fcb900;
+    padding: 10px;
+    border-radius: 3px;
+    transition: 0.3s;
+	display: inline-block;
+  margin: 10px; /* Add spacing between icons */
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+    background: #fcb900;
+    color: black;
+	
+}.social-icons i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px; 
+  height: 50px; 
+  font-size: 20px;
+  color: white; 
+  transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.social-icons i:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+  background-color: #fcb900; /* Change background color on hover */
+}
+
+/* Responsive adjustments for Contact Us Section */
+@media (max-width: 1024px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .contact-image {
+        flex: 1;
+        max-width: 80%; /* Make the image smaller */
+        height: auto;
+    }
+
+    .contact-details {
+        flex: 1;
+        text-align: center;
+    }
+
+    .contact-details h2 {
+        font-size: 28px;
+    }
+
+    .contact-details p {
+        font-size: 14px;
+    }
+
+    .social-icons a {
+        font-size: 18px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        gap: 20px;
+		align-items: Center;
+    }
+    
+    .contact-image {
+        max-width: 70%; /* Further reduce image size on smaller screens */
+    }
+
+    .contact-details h2 {
+        font-size: 24px;
+    }
+
+    .contact-details p {
+        font-size: 14px;
+    }
+
+    .social-icons a {
+        font-size: 16px;
+        padding: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-container {
+        gap: 15px;
+		align-items: Center;
+    }
+    
+    .contact-image {
+        max-width: 60%; /* Make the image smaller on very small screens */
+    }
+
+    .contact-details h2 {
+        font-size: 20px;
+    }
+
+    .contact-details p {
+        font-size: 12px;
+    }
+
+    .social-icons a {
+        font-size: 14px;
+        padding: 5px;
+    }
+}
+/* Responsive alignment for smaller screens */
+@media (max-width: 768px) {
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; 
+    text-align: center;
+    margin: 0 auto; /* Center container on the page */
+  }
+
+  .social-icons a {
+    margin: 10px 0; /* Add spacing between icons */
+  }
+
+  .social-icons i {
+    font-size: 20px; /* Keeps icons a consistent size */
+    width: 50px;
+    height: 50px;
+  }
+}

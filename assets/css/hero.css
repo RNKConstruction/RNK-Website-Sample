@@ -1,0 +1,109 @@
+/* Hero Section */
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding-top: 140px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  opacity: 0.9;
+}
+
+.btn {
+  background: #fcb900;
+  color: #222;
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: orange;
+}
+.hero h2 {
+  color: white;
+  margin-top: -5px;
+}
+h1,
+h2 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+h2 {
+  margin-top: -5px;
+}
+
+p {
+  color: white;
+}
+h5 {
+  color: white;
+}
+
+/* Responsive styles for Hero Section */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 8px 18px;
+    font-size: 13px;
+  }
+}

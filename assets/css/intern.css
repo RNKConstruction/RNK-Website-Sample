@@ -1,0 +1,170 @@
+/* Container for cards */
+.container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Individual card styling */
+.card {
+    background: white;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensures equal height for all cards */
+}
+
+/* Image styling within the card */
+.card img {
+    width: 100%;
+    height: 200px; /* Ensures all images are the same size */
+    object-fit: cover; /* Prevents distortion */
+}
+
+/* Content within the card */
+.content {
+    padding: 15px;
+    text-align: center;
+    flex: 1; /* Makes content section expand to fill space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Evenly distributes content */
+}
+
+/* Category text styling */
+.category {
+    font-size: 12px;
+    color: gray;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Card title */
+h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: black;
+}
+
+h5 {
+    color: black;
+}
+
+/* Button inside the card */
+.photo-btn {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100px;
+    height: 40px;
+    display: block;
+    margin: 10px auto 0; /* Centers the button horizontally */
+    text-align: center;
+}
+
+.photo-btn:hover {
+    background-color: #e6b800;
+}
+
+/* Section styling for Intern */
+#intern {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* Title for intern section */
+#intern h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: 700;
+    position: relative;
+}
+
+#intern h1::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background-color: #fcb900;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.h6 {
+    color: orange;
+}
+
+h4 {
+    color: black;
+}
+
+/* Responsive adjustments */
+
+/* For screens 1024px and above */
+@media (max-width: 1024px) {
+    .container {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .card {
+        width: 45%; /* Adjust card width for smaller screens */
+    }
+}
+
+/* For screens 768px and below */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center;
+    }
+
+    .card {
+        width: 80%; /* Make cards wider for smaller screens */
+        margin-bottom: 20px; /* Add spacing between cards */
+    }
+
+    .photo-btn {
+        font-size: 14px; /* Increase button text size */
+        width: 120px; /* Increase button width */
+        height: 50px; /* Increase button height */
+    }
+}
+
+/* For screens 480px and below (mobile devices) */
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center;
+    }
+
+    .card {
+        width: 90%; /* Make cards even larger for mobile */
+        margin-bottom: 20px;
+    }
+
+    .photo-btn {
+        font-size: 16px; /* Increase button text size */
+        width: 140px; /* Increase button width */
+        height: 60px; /* Increase button height */
+    }
+
+    h3 {
+        font-size: 16px; /* Adjust heading font size */
+    }
+
+    .category {
+        font-size: 10px; /* Adjust category text size */
+    }
+}

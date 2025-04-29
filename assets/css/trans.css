@@ -1,0 +1,40 @@
+.location-banner {
+      background-color: #d4d4d4;
+      text-align: center;
+      padding: 120px 20px 30px; /* top padding to avoid overlap */
+    }
+
+    .location-banner h2 {
+      font-size: 40px;
+      color: orange;
+      margin: 0;
+    }
+
+    .location-description {
+      font-size: 15px;
+      color: #444;
+      margin-top: 10px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+	.project-image {
+  padding: 40px 20px; /* top/bottom and side spacing */
+}
+
+.image-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px; /* adds space on left and right */
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px; /* optional: adds a nice rounded look */
+  margin: 2rem 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* optional: adds soft shadow */
+}

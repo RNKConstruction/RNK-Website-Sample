@@ -1,0 +1,94 @@
+
+/*why hire us*/
+	#whyhireus {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#whyhireus h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: 700;
+    position: relative;
+}
+
+#whyhireus h1::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background-color: #fcb900;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.whyhireus-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.whyhireus-item {
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whyhireus-item:hover {
+    transform: translateY(-10px);
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    background-color: #fcb900;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+
+.whyhireus-item:hover .icon {
+    background-color: white;
+    color: #fcb900;
+    border: 1px solid #fcb900;
+    transform: scale(1.1);
+}
+
+.whyhireus-item h3 {
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.whyhireus-item p {
+    font-size: 14px;
+    color: #666;
+    max-width: 280px;
+    margin: 0 auto;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .whyhireus-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .whyhireus-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+

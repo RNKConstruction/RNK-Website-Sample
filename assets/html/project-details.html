@@ -1,0 +1,87 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <title>RNK Construction</title>
+    
+    <!-- This is the tab icon -->
+    <link rel="icon" href="../images/rnk.png" type="image/png">
+    <link rel="stylesheet" href="../css/company.css" />
+    <link rel="stylesheet" href="../css/top-nav.css" />
+    <link rel="stylesheet" href="../css/trans.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Top Bar + Navbar -->
+    <div class="top-nav-bar">
+      <div class="top-bar-content">
+        <link href="css/top-nav.css" rel="stylesheet" type="text/css" />
+      </div>
+      <nav>
+        <a href="../../index.html" style="text-decoration: none">
+          <div class="logo" style="font-size: 15px">
+            <img class="bgimg" src="../images/rnk.png" alt="RNK" />
+            RNK
+          </div>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="../../index.html" class="nav">Home</a></li>
+          <li><a href="aboutt.html#about-us" class="nav">About Us</a></li>
+          <li><a href="../../index.html#works" class="nav">Projects</a></li>
+          <li>
+            <a href="../../index.html#walkthrough-section" class="nav"
+              >Walkthrough</a
+            >
+          </li>
+          <li><a href="whyhire.html" class="nav">Why Hire Us</a></li>
+          <li><a href="../../index.html#intern" class="nav">Internship</a></li>
+          <li>
+            <a href="../../index.html#contact-us" class="nav">Contact Us</a>
+          </li>
+        </ul>
+        <div class="burger" onclick="toggleMenu()">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Details Area -->
+    <section class="location-banner">
+      <!-- Project Name -->
+      <h2><span id="projectName"></span></h2>
+
+      <!-- Project Description -->
+      <p class="location-description" style="text-align: justify">
+        <span id="projectDesc"></span>
+      </p>
+      <br />
+
+      <!-- Project Specificarttion -->
+      <h3>
+        <p><span id="projectSpecification"></span></p>
+      </h3>
+    </section>
+
+    <!-- Image Area -->
+    <section class="project-image">
+      <div class="image-wrapper" id="imageColumn"></div>
+    </section>
+  </body>
+
+  <script src="../js/project-description.js"></script>
+</html>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("show");
+  }
+</script>
